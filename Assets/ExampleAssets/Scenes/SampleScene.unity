@@ -828,14 +828,14 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: sample
+  mTrackableName: lena
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/VuforiaMars_Images.xml
-  mAspectRatio: 1.0160142
-  mImageTargetType: 3
-  mWidth: 0.19684765
-  mHeight: 0.2
-  mRuntimeTexture: {fileID: 2800000, guid: c58bde92b148944309ed5b979224f2b9, type: 3}
+  mDataSetPath: Vuforia/AR_Project_Ha.xml
+  mAspectRatio: 1
+  mImageTargetType: 0
+  mWidth: 1
+  mHeight: 1
+  mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
@@ -870,8 +870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1970917248}
   mHiddenRoot: {fileID: 0}
-  mTargetName: sample
-  mDatasetName: Vuforia/VuforiaMars_Images.xml
+  mTargetName: lena
+  mDatasetName: Vuforia/AR_Project_Ha.xml
   mCastedBehaviour: {fileID: 1970917248}
   mMeshFilter: {fileID: 0}
   mMeshRenderer: {fileID: 0}
