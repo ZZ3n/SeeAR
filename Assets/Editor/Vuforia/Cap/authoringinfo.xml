@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.18.5">
+<ModelTarget name="Cap" targetId="d2018230eab14b48844e93662daed2eb" version="14.0" toolVersion="10.18.5" bbox="-205.239288 12.727245 -404.503235 205.338608 224.524689 151.159973" previewImage="d2018230eab14b48844e93662daed2eb_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="Caps_assembly" assemblyId="acb65b6ded77476eb62ceac5b88b1cdd">
+<Part name="Cap" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="101.848 -135.491 882.074" rotation="AD: -0.49608 6.56291 -0.983362 127.098" image="Cap_GuideView_0000.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

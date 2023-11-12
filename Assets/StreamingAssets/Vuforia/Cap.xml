@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="Cap" motionHint="adaptive" trackingMode="car" optimizeTrackingFor="default"/>
+
+</Tracking>
+
+<Assembly name="Caps_assembly" assemblyId="acb65b6ded77476eb62ceac5b88b1cdd">
+<Part name="Cap" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="101.848 -135.491 882.074" rotation="AD: -0.49608 6.56291 -0.983362 127.098" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

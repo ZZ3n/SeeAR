@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.18.5">
+<ModelTarget name="monkey" targetId="03c30d9b991e4c9d80d9827caf75edc3" version="14.0" toolVersion="10.18.5" bbox="-1.368523 -0.985711 -0.852914 1.368523 0.985924 0.852898" previewImage="03c30d9b991e4c9d80d9827caf75edc3_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="monkeys_assembly" assemblyId="6becf7dd471f4db7b41b89b6ee0bcc65">
+<Part name="monkey" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="-4.35526e-08 0.000106358 6.1655" rotation="AD: 1 5.44842e-06 -0.00280103 180.223" image="monkey_GuideView_0000.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

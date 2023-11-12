@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.18.5">
+<ModelTarget name="Orange" targetId="8d5b833c73564ae5905081944b0559af" version="14.0" toolVersion="10.18.5" bbox="-4.041640 -4.011484 -4.361335 4.039984 3.976465 4.363242" previewImage="8d5b833c73564ae5905081944b0559af_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="Oranges_assembly" assemblyId="09477fce7cd643f9944388f107f1cd36">
+<Part name="Orange" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="0.000136733 -0.0152366 13.5402" rotation="AD: 0.998704 0.132905 -0.436229 210.981" image="Orange_GuideView_0000.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

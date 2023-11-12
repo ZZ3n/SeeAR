@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="Orange" motionHint="adaptive" trackingMode="scan" optimizeTrackingFor="default"/>
+
+</Tracking>
+
+<Assembly name="Oranges_assembly" assemblyId="09477fce7cd643f9944388f107f1cd36">
+<Part name="Orange" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="0.000136733 -0.0152366 13.5402" rotation="AD: 0.998704 0.132905 -0.436229 210.981" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>
