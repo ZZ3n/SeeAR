@@ -2,5 +2,6 @@
 <QCARConfig>
   <Tracking>
     <ImageTarget name="lena" size="1.000000 1.000000" />
+    <ImageTarget name="QR" size="1.000000 1.016014" />
   </Tracking>
 </QCARConfig>
