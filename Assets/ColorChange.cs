@@ -5,6 +5,13 @@ using UnityEngine.UI;  // ⭐⭐
 
 public class ColorChange : MonoBehaviour
 {
+    public GameObject title;
+
+    void Start()
+    {
+        title = GameObject.Find("title");
+    }
+
     public void ChangeColor(int index)
     {
         Color color = Color.white;
@@ -15,12 +22,18 @@ public class ColorChange : MonoBehaviour
                 gameObject.SetActive(false);
                 break;
             case 1:
-                color = Color.blue;
+                gameObject.SetActive(true);
                 break;
             case 2:
-                color = Color.green;
+                title.SetActive(false);
                 break;
             case 3:
+                title.SetActive(true);
+                break;
+            case 4:
+                color = Color.green;
+                break;
+            case 5:
                 color = Color.white;
                 break;
         }
