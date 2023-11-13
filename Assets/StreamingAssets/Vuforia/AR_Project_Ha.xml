@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="24bit" size="1.000000 1.333333" />
     <ImageTarget name="lena" size="1.000000 1.000000" />
     <ImageTarget name="QR" size="1.000000 1.016014" />
+    <ImageTarget name="Hello" size="1.000000 1.333333" />
   </Tracking>
 </QCARConfig>
