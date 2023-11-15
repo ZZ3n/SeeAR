@@ -3,24 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;  // ⭐⭐
 
-public class ColorChange : MonoBehaviour
+public class ObjectDropdownEvent : MonoBehaviour
 {
-    public void ChangeColor(int index)
+     public GameObject title;
+
+    void Start()
+    {
+        title = GameObject.Find("title");
+    }
+
+    public void DropdownEvent(int index)
     {
         Color color = Color.white;
 
         switch (index)
         {
             case 0:
-                color = Color.red;
+                gameObject.SetActive(false);
                 break;
             case 1:
-                color = Color.blue;
+                gameObject.SetActive(true);
                 break;
             case 2:
-                color = Color.green;
+                title.SetActive(false);
                 break;
             case 3:
+                title.SetActive(true);
+                break;
+            case 4:
+                color = Color.green;
+                break;
+            case 5:
                 color = Color.white;
                 break;
         }
