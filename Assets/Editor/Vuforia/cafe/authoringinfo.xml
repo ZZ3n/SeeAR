@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<QCARInfo>
+    <TargetSet version="3.4">
+        <AreaTarget version="5.1" bbox="-1.3274 -3.1316 -6.2660 1.8250 1.6484 1.1361" targetId="f3c48c57fc3b4a66a5c18073b82de14a" name="cafe" pathAuthoring="f3c48c57fc3b4a66a5c18073b82de14a_authoring.glb" pathOcclusion="f3c48c57fc3b4a66a5c18073b82de14a_occlusion.3dt" pathNavMesh="f3c48c57fc3b4a66a5c18073b82de14a_navmesh.glb" cloudTarget="false" />
+    </TargetSet>
+</QCARInfo>
