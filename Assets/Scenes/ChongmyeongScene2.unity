@@ -1675,7 +1675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Capture
+  m_text: CAPTURE
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1814,7 +1814,7 @@ PrefabInstance:
       objectReference: {fileID: 910220621}
     - target: {fileID: 3158744803547343216, guid: 97f579fd89a0f47db84b828835868312, type: 3}
       propertyPath: m_Name
-      value: C button
+      value: ButtonCapture
       objectReference: {fileID: 0}
     - target: {fileID: 8204200633577026755, guid: 97f579fd89a0f47db84b828835868312, type: 3}
       propertyPath: m_Pivot.x
