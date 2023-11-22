@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AVSqlhj/////AAABmdscXQKPIUqVo2NjIfandKEDRMiqF5C5v3g9yq60GmTXVoJdfo0vVNyNbsAxvHSH1Bp76OYj0UwofhNO8rhSZ5knJTAchFMu3FW3cIq4YJOsJbOxqI7/mar2Cpgr5g5PizAuDPgy7mKTPSVY1s5mZmesI0U2LW+PJrcXlkAUvR7eLQ2HiCpOUNlUE/Vijngd2MO55974MGbiV0yBPTjxgirER/AM34bm3iJjNgZ4yUEgt2+2vDz7f0Ugyva9/CEloMo7tFpAvXrrNIGNePqtgrdnD/iAcuHe1yu/Oizn1is1y5IadZhSPkinN5Bm5eS8Cp2FuCcRRjuB2FNQYCk6W+wHMuam4SPullApYEAADKSL
-    ufoLicenseKey: QWFBbFdmWC8vLy8vQUFBQUtONVdhc3dDc1VnTXAwWHNhLzhpVW8rWFQxN0lUa3Jxd2xQUXhFUDA1aTRuSGVLNmtTcnlCRVhheVRhdXJRNXEyOXlDdWV3eWh6UGVHSFFvQWJPUnprUUdwZVVwMEVWdk9CVkFrcmg5RlR0VkFyaHRzbWJxd2xkU1I4Z3NjUmpDdjJpL0ZWa3pVUkZ1QnlHemk5cmY0KzBmSURBcmlBV1h5bmsraERsYmV1NXA3MHhVNjFld3RWVGY0NGxhUnJGdExpeEhOUUExRk51ZFRnSFlzbnExaCtkL05qQWhKdGU2TS9CcldlVFBsdUpueTFObHp6R1lYWVRrdExHenZxRW1qZmI5ejFGRDhkM0d5eG5lOFFDOGJsNkJ2czUwQXRKMHdKRitIYndOcXJOUWFGY2Y0aVlKMnpaSHlMVG5PbWpMK09Kd2dsN2F1WWJUaElJcXJvbWxWT0VINmhYY29QblpsNVkxaitQRHFqc1Y=
+    ufoLicenseKey: QVRhQVRjSC8vLy8vQUFBQUtQR3JzcjB4YmttUHRGVGdJRURVRnpOVVVIWW5NTW9pZW5Ud0lrTkpaeTFsRVhvSHhyYUF6Q0FkVGxkemxOK0YwbXNXMExiaFJ3NmVhcG9zZjgzQ3Nyc0pUSjRLa2ZyaG04ZjA0aFgxVGlCYnl4eHE2OEtYMlVqSmZLTEgzT2dKejhBcjB4V0l1cHNFN2FoZG5UcHg0SFc2bjk2cmFRcHU2TDV3RU9uU0pLRDZxVzgwNUl2cXdKT1dJL3VlUldQa2pMZE13N3ZzUlRvbGkzOSswN1VLQ1ZlYjEzakNnZ1FucWowK3VUeUVsRFNpUUZOTVpxNHpSS3FPS0c4WHo5UTNDSGVzZDhhNXJlYVVwUWtSb2U5a0xHZHpxZWRKQWhxRWVwSnJaSTczVkpzSjUwNEswTjVyYWlyMHloc21VTUttTFJ2TUhDSmlsT0M4VnlKRFJZNFFweUtIK0dETWg4ZFZtcll0d29ZTmNRVkY=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
     cameraDeviceModeSetting: -1
@@ -23,19 +23,17 @@ MonoBehaviour:
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
     logLevel: 0
-    version: 10.18.4
-    eulaAcceptedVersions: '{"Values":["","0.0","10.18"]}'
+    version: 10.19.3
+    eulaAcceptedVersions: '{"Values":["","0.0","10.18","10.19"]}'
   database:
     disableModelExtraction: 0
   shaders:
-    depthMaskShader: {fileID: 4800000, guid: 1ce7eb78425fb1540838bc9d5d95857a, type: 3}
-    outlineShader: {fileID: 4800000, guid: c1ded68d068051d4f92650fcddaae5c7, type: 3}
-    unlitTransparentShader: {fileID: 10750, guid: 0000000000000000f000000000000000,
-      type: 0}
+    depthMaskShader: {fileID: 4800000, guid: 9894afa5f3a5e4bbca625981beb1b20e, type: 3}
+    outlineShader: {fileID: 4800000, guid: 88d3b6b5cf364476ca39fcec255331b1, type: 3}
+    unlitTransparentShader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
   videoBackground:
     numDivisions: 2
-    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
-      type: 3}
+    videoBackgroundShader: {fileID: 4800000, guid: 144dfca22ac584ade9e538e24a5ddded, type: 3}
     unlitShader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
@@ -44,7 +42,7 @@ MonoBehaviour:
     autoImportArcore: 1
     thirdPartyARCoreClientDetected: 0
   playmode:
-    mRecordingPath: 
+    mRecordingPath: Assets/SamplesResources/Recordings/vfx_modeltarget_recording.mp4
     playModeType: 0
   webcam:
     renderTextureLayer: 30
