@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SamplesResources/Scenes/AreaTargets/VisualizationEffects/Minimap.unity
     guid: 6a82174bc2b764b488945d2dfa2158b9
+  - enabled: 1
+    path: Assets/Scenes/TeahwaScene.unity
+    guid: 43fcd3304269f48009b63115e8efd5de
   m_configObjects: {}
