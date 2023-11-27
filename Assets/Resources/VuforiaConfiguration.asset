@@ -42,7 +42,7 @@ MonoBehaviour:
     autoImportArcore: 1
     thirdPartyARCoreClientDetected: 0
   playmode:
-    mRecordingPath: /Users/zz3n/UnityProjects/Hapjugi/Assets/SamplesResources/Recordings/recordOne.mp4
+    mRecordingPath: /Users/seodongwon/Hapjugi/Assets/SamplesResources/Recordings/recordOne.mp4
     playModeType: 2
   webcam:
     renderTextureLayer: 30
