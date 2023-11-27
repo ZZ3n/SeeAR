@@ -1,8 +1,9 @@
 using System;
+using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class ContentInfo
 {
-    public String title;
-    public String description;
+    [TextArea(1, 100)] public string title;
+    [TextArea(3, 10)] public string description;
 }
