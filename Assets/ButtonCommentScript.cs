@@ -7,6 +7,7 @@ public class ButtonCommentScript : MonoBehaviour
     public GameObject ButtonEnterComment;
     public GameObject InputComment;
     public GameObject ScrollInput;
+    public GameObject ButtonHideComment;
     public bool isClicked;
 
     // Start is called before the first frame update
@@ -15,10 +16,12 @@ public class ButtonCommentScript : MonoBehaviour
         ButtonEnterComment = GameObject.Find("ButtonEnterComment");
         InputComment = GameObject.Find("InputComment");
         ScrollInput = GameObject.Find("ScrollInput");
+        ButtonHideComment = GameObject.Find("ButtonHideComment");
         isClicked = false;
         ButtonEnterComment.SetActive(false);
         InputComment.SetActive(false);
         ScrollInput.SetActive(false);
+        ButtonHideComment.SetActive(false);
     }
 
     public void BtnClick()
@@ -29,12 +32,14 @@ public class ButtonCommentScript : MonoBehaviour
             ButtonEnterComment.SetActive(true);
             InputComment.SetActive(true);
             ScrollInput.SetActive(true);
+            ButtonHideComment.SetActive(true);
         }
         else
         {
             ButtonEnterComment.SetActive(false);
             InputComment.SetActive(false);
             ScrollInput.SetActive(false);
+            ButtonHideComment.SetActive(false);
         }
 
     }
