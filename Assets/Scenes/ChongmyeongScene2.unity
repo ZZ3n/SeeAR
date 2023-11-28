@@ -206,7 +206,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1951045026}
   m_HandleRect: {fileID: 1951045025}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -397,7 +397,7 @@ GameObject:
   - component: {fileID: 118319534}
   - component: {fileID: 118319533}
   - component: {fileID: 118319532}
-  - component: {fileID: 118319531}
+  - component: {fileID: 118319535}
   m_Layer: 5
   m_Name: ButtonHideComment
   m_TagString: Untagged
@@ -426,21 +426,6 @@ RectTransform:
   m_AnchoredPosition: {x: -50, y: 400}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &118319531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118319529}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89923d8bf47a0c34ca13b8d0b64ee1e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ButtonEnterComment: {fileID: 0}
-  InputComment: {fileID: 0}
-  ScrollInput: {fileID: 0}
 --- !u!114 &118319532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,8 +470,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 118319531}
-        m_TargetAssemblyTypeName: ButtonHideComment, Assembly-CSharp
+      - m_Target: {fileID: 118319535}
+        m_TargetAssemblyTypeName: HideCommentScript, Assembly-CSharp
         m_MethodName: BtnClick
         m_Mode: 1
         m_Arguments:
@@ -535,6 +520,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118319529}
   m_CullTransparentMesh: 1
+--- !u!114 &118319535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118319529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0b701411a1ddc4eb7b82e1da930404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonEnterComment: {fileID: 0}
+  InputComment: {fileID: 0}
+  ScrollInput: {fileID: 0}
+  ButtonHideComment: {fileID: 0}
 --- !u!1 &143944348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1354,7 +1355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7478487165997891105, guid: 398ee1c84048d68479a4ca31600e05d2, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1180
+      value: 980
       objectReference: {fileID: 0}
     - target: {fileID: 7478487165997891105, guid: 398ee1c84048d68479a4ca31600e05d2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1636,7 +1637,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2589,7 +2590,6 @@ GameObject:
   - component: {fileID: 1035281585}
   - component: {fileID: 1035281588}
   - component: {fileID: 1035281587}
-  - component: {fileID: 1035281586}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -2614,21 +2614,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.0009326628, y: 0.00013955869}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &1035281586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035281584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fef1189d9045db449ef7322fa50c74d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1035281587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3032,8 +3020,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   contentInfo:
-    title: 
-    description: 
+    title: biirrd
+    description: birdbird
 --- !u!114 &1148443863
 MonoBehaviour:
   m_ObjectHideFlags: 0
