@@ -43,7 +43,7 @@ MonoBehaviour:
     thirdPartyARCoreClientDetected: 0
   playmode:
     mRecordingPath: /Users/seodongwon/Hapjugi/Assets/SamplesResources/Recordings/recordOne.mp4
-    playModeType: 2
+    playModeType: 0
   webcam:
     renderTextureLayer: 30
   packageInformation:
