@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AVSqlhj/////AAABmdscXQKPIUqVo2NjIfandKEDRMiqF5C5v3g9yq60GmTXVoJdfo0vVNyNbsAxvHSH1Bp76OYj0UwofhNO8rhSZ5knJTAchFMu3FW3cIq4YJOsJbOxqI7/mar2Cpgr5g5PizAuDPgy7mKTPSVY1s5mZmesI0U2LW+PJrcXlkAUvR7eLQ2HiCpOUNlUE/Vijngd2MO55974MGbiV0yBPTjxgirER/AM34bm3iJjNgZ4yUEgt2+2vDz7f0Ugyva9/CEloMo7tFpAvXrrNIGNePqtgrdnD/iAcuHe1yu/Oizn1is1y5IadZhSPkinN5Bm5eS8Cp2FuCcRRjuB2FNQYCk6W+wHMuam4SPullApYEAADKSL
-    ufoLicenseKey: QVRhQVRjSC8vLy8vQUFBQUtQR3JzcjB4YmttUHRGVGdJRURVRnpOVVVIWW5NTW9pZW5Ud0lrTkpaeTFsRVhvSHhyYUF6Q0FkVGxkemxOK0YwbXNXMExiaFJ3NmVhcG9zZjgzQ3Nyc0pUSjRLa2ZyaG04ZjA0aFgxVGlCYnl4eHE2OEtYMlVqSmZLTEgzT2dKejhBcjB4V0l1cHNFN2FoZG5UcHg0SFc2bjk2cmFRcHU2TDV3RU9uU0pLRDZxVzgwNUl2cXdKT1dJL3VlUldQa2pMZE13N3ZzUlRvbGkzOSswN1VLQ1ZlYjEzakNnZ1FucWowK3VUeUVsRFNpUUZOTVpxNHpSS3FPS0c4WHo5UTNDSGVzZDhhNXJlYVVwUWtSb2U5a0xHZHpxZWRKQWhxRWVwSnJaSTczVkpzSjUwNEswTjVyYWlyMHloc21VTUttTFJ2TUhDSmlsT0M4VnlKRFJZNFFweUtIK0dETWg4ZFZtcll0d29ZTmNRVkY=
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QVhiM0Y1Ly8vLy8vQUFBQUtPbnFIeHJFSGs1N3VrMlg4U050eVBzK2pkOFZxMDhrazlwYjBsYS9aZUIxQlV1ckZWcWt0ZllSQWpnT2tIRlY2VzdOMDRTRjNYRUhmbTF5L1BnYlB4eWdHWEF6RUNheXowc3dyNVNYa2ozdERuRjhka1FpOHRscHdkMDcrcEJEY1FjTjNJcUM1bEgwOTYzQkdZdjRsQStRb0hSQU9nRGthelp5TlY0WHVwWU9EaE05NWw5bXAzbnBDMjM5MWZBWXBFdEdiL2loTDNab3N4b25ZblhjK1JtSS9wLzRoTDIwVGhmTXR6WFJNYkpUTXZLZzJoQ0N0TEJXNEptZ0pSOUtSdStzQWM3QjVNOWFFMGVHQ1dUT1VRSUUweEpiZC9ZL2cvS29iNDhBRXdQOGFwbWR5NmRWU0FHU2psVzRZY2FEU2Zud3J1ZHhucVNmSUZiajNTUnIzM0lKVlFIaW1rL0oyOGNFeDdyekcySXg=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
     cameraDeviceModeSetting: -1
@@ -23,8 +23,8 @@ MonoBehaviour:
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
     logLevel: 0
-    version: 10.19.3
-    eulaAcceptedVersions: '{"Values":["","0.0","10.18","10.19"]}'
+    version: 1.0.0
+    eulaAcceptedVersions: 
   database:
     disableModelExtraction: 0
   shaders:
@@ -42,7 +42,7 @@ MonoBehaviour:
     autoImportArcore: 1
     thirdPartyARCoreClientDetected: 0
   playmode:
-    mRecordingPath: /Users/seodongwon/Hapjugi/Assets/SamplesResources/Recordings/recordOne.mp4
+    mRecordingPath: 
     playModeType: 0
   webcam:
     renderTextureLayer: 30
