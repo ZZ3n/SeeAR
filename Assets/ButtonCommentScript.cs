@@ -8,16 +8,14 @@ public class ButtonCommentScript : MonoBehaviour
     public GameObject InputComment;
     public GameObject ScrollInput;
     public GameObject ButtonHideComment;
-    public bool isClicked;
+    public GameObject ButtonRotate;
+    public GameObject ButtonInfo;
+    public GameObject ButtonCapture;
+    public GameObject ButtonComment;
 
     // Start is called before the first frame update
     void Start()
     {
-        ButtonEnterComment = GameObject.Find("ButtonEnterComment");
-        InputComment = GameObject.Find("InputComment");
-        ScrollInput = GameObject.Find("ScrollInput");
-        ButtonHideComment = GameObject.Find("ButtonHideComment");
-        isClicked = false;
         ButtonEnterComment.SetActive(false);
         InputComment.SetActive(false);
         ScrollInput.SetActive(false);
@@ -26,21 +24,13 @@ public class ButtonCommentScript : MonoBehaviour
 
     public void BtnClick()
     {
-        isClicked = !isClicked;
-        if (isClicked)
-        {
-            ButtonEnterComment.SetActive(true);
-            InputComment.SetActive(true);
-            ScrollInput.SetActive(true);
-            ButtonHideComment.SetActive(true);
-        }
-        else
-        {
-            ButtonEnterComment.SetActive(false);
-            InputComment.SetActive(false);
-            ScrollInput.SetActive(false);
-            ButtonHideComment.SetActive(false);
-        }
-
+        ButtonEnterComment.SetActive(true);
+        InputComment.SetActive(true);
+        ScrollInput.SetActive(true);
+        ButtonHideComment.SetActive(true);
+        ButtonRotate.SetActive(false);
+        ButtonInfo.SetActive(false);
+        ButtonCapture.SetActive(false);
+        ButtonComment.SetActive(false);
     }
 }

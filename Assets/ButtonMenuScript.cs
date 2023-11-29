@@ -9,16 +9,11 @@ public class ButtonMenuScript : MonoBehaviour
     public GameObject ButtonInfo;
     public GameObject ButtonCapture;
     public GameObject ButtonComment;
-    public bool isClicked;
+    private bool isClicked;
 
     // Start is called before the first frame update
     void Start()
     {
-        ButtonMenu = GameObject.Find("ButtonMenu");
-        ButtonRotate = GameObject.Find("ButtonRotate");
-        ButtonInfo = GameObject.Find("ButtonInfo");
-        ButtonCapture = GameObject.Find("ButtonCapture");
-        ButtonComment = GameObject.Find("ButtonComment");
         isClicked = false;
         ButtonRotate.SetActive(false);
         ButtonInfo.SetActive(false);
