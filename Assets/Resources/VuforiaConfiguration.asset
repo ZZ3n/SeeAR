@@ -23,7 +23,7 @@ MonoBehaviour:
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
     logLevel: 0
-    version: 1.0.0
+    version: 10.19.3
     eulaAcceptedVersions: '{"Values":["0.0","10.18","10.19"]}'
   database:
     disableModelExtraction: 0
@@ -42,8 +42,8 @@ MonoBehaviour:
     autoImportArcore: 1
     thirdPartyARCoreClientDetected: 0
   playmode:
-    mRecordingPath: 
-    playModeType: 0
+    mRecordingPath: C:/Users/LSH/AR_Vuforia/Hapjugi/Assets/SamplesResources/Recordings/recordOne.mp4
+    playModeType: 2
   webcam:
     renderTextureLayer: 30
   packageInformation:
