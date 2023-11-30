@@ -6,13 +6,11 @@ public class ButtonRotateScript : MonoBehaviour
 {
     public GameObject ButtonRotateLeft;
     public GameObject ButtonRotateRight;
-    public bool isClicked;
+    bool isClicked;
 
     // Start is called before the first frame update
     void Start()
     {
-        ButtonRotateLeft = GameObject.Find("ButtonRotateLeft");
-        ButtonRotateRight = GameObject.Find("ButtonRotateRight");
         isClicked = false;
         ButtonRotateLeft.SetActive(false);
         ButtonRotateRight.SetActive(false);
@@ -21,16 +19,7 @@ public class ButtonRotateScript : MonoBehaviour
     public void BtnClick()
     {
         isClicked = !isClicked;
-        if (isClicked)
-        {
-            ButtonRotateLeft.SetActive(true);
-            ButtonRotateRight.SetActive(true);
-        }
-        else
-        {
-            ButtonRotateLeft.SetActive(false);
-            ButtonRotateRight.SetActive(false);
-        }
-
+        ButtonRotateLeft.SetActive(isClicked);
+        ButtonRotateRight.SetActive(isClicked);
     }
 }
