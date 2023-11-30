@@ -159,6 +159,13 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.yasirkula.nativegallery": {
+      "version": "https://github.com/yasirkula/UnityNativeGallery.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "b6e0fd9530e403b5ac1bfa3f061d09073e09fd7d"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
