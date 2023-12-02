@@ -3787,6 +3787,42 @@ MonoBehaviour:
   mDatasetName: Vuforia/test.xml
   mCastedBehaviour: {fileID: 1853471780}
   mType: 0
+--- !u!114 &1853471785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201315562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1973558268, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1853471780}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: test
+  mDatasetName: Vuforia/test.xml
+  mCastedBehaviour: {fileID: 1853471780}
+  mType: 0
+--- !u!114 &1853471787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201315562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1973558268, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1853471780}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: test
+  mDatasetName: Vuforia/test.xml
+  mCastedBehaviour: {fileID: 1853471780}
+  mType: 0
 --- !u!1 &1874868571
 GameObject:
   m_ObjectHideFlags: 0
@@ -4178,4 +4214,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9144581124904665818, guid: 1538f297c59deb04eac3bb255f4e32fa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1853471783}
+    - targetCorrespondingSourceObject: {fileID: 9144581124904665818, guid: 1538f297c59deb04eac3bb255f4e32fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1853471785}
+    - targetCorrespondingSourceObject: {fileID: 9144581124904665818, guid: 1538f297c59deb04eac3bb255f4e32fa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1853471787}
   m_SourcePrefab: {fileID: 100100000, guid: 1538f297c59deb04eac3bb255f4e32fa, type: 3}
