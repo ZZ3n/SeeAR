@@ -9,8 +9,7 @@ public class MenuManager : MonoBehaviour
 
     // public GameObject ScrollInput;
     // public GameObject ButtonHideComment;
-
-    public GameObject ButtonRotate;
+    
     public GameObject ButtonInfo;
     public GameObject ButtonCapture;
     public GameObject ButtonComment;
@@ -25,7 +24,6 @@ public class MenuManager : MonoBehaviour
 
     void ButtonsSetActive(bool c)
     {
-        ButtonRotate.SetActive(c);
         ButtonInfo.SetActive(c);
         ButtonCapture.SetActive(c);
         ButtonComment.SetActive(c);
