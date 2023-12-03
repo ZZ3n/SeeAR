@@ -2866,7 +2866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9144581124904665818, guid: 1538f297c59deb04eac3bb255f4e32fa, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2875,9 +2875,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 9144581124904665818, guid: 1538f297c59deb04eac3bb255f4e32fa, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1620176131}
-    - targetCorrespondingSourceObject: {fileID: 9144581124904665818, guid: 1538f297c59deb04eac3bb255f4e32fa, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1620176133}
   m_SourcePrefab: {fileID: 100100000, guid: 1538f297c59deb04eac3bb255f4e32fa, type: 3}
 --- !u!4 &1620176127 stripped
 Transform:
@@ -2896,24 +2893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1620176131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1398718300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1973558268, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1620176129}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: test
-  mDatasetName: Vuforia/test.xml
-  mCastedBehaviour: {fileID: 1620176129}
-  mType: 0
---- !u!114 &1620176133
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
