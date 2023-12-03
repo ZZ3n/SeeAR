@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 6104828}
   - component: {fileID: 6104827}
   - component: {fileID: 6104826}
-  - component: {fileID: 6104825}
+  - component: {fileID: 6104829}
   m_Layer: 0
   m_Name: Image_Mona
   m_TagString: Untagged
@@ -159,25 +159,6 @@ Transform:
   m_Father: {fileID: 1287290250}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6104825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6104823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 6104828}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: "\uBAA8\uB098\uB9AC\uC790 \uAE00\uADC0"
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 6104828}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &6104826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,7 +276,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 6104825}
+  mPreview: {fileID: 6104829}
+--- !u!114 &6104829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6104823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 6104828}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: "\uBAA8\uB098\uB9AC\uC790 \uAE00\uADC0"
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 6104828}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &19030524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,7 +2032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BasePath: Assets/SamplesResources/Recordings/
-  RecordingName: 
+  RecordingName: recordOne.mp4
 --- !u!1 &1167781576 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4019884281791250772, guid: 1d4ad720151db4836931805908cec946, type: 3}
@@ -2054,61 +2054,7 @@ MonoBehaviour:
   m_Script: {fileID: 329728757, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1167781580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1167781576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1973558268, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1167781579}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: test
-  mDatasetName: Vuforia/test.xml
-  mCastedBehaviour: {fileID: 1167781579}
-  mType: 0
 --- !u!114 &1167781581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1167781576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1973558268, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1167781579}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: test
-  mDatasetName: Vuforia/test.xml
-  mCastedBehaviour: {fileID: 1167781579}
-  mType: 0
---- !u!114 &1167781582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1167781576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1973558268, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1167781579}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: test
-  mDatasetName: Vuforia/test.xml
-  mCastedBehaviour: {fileID: 1167781579}
-  mType: 0
---- !u!114 &1167781583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3684,7 +3630,7 @@ GameObject:
   - component: {fileID: 1814135966}
   - component: {fileID: 1814135965}
   - component: {fileID: 1814135964}
-  - component: {fileID: 1814135963}
+  - component: {fileID: 1814135967}
   m_Layer: 0
   m_Name: Image_wak
   m_TagString: Untagged
@@ -3708,25 +3654,6 @@ Transform:
   m_Father: {fileID: 1287290250}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1814135963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1814135961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1814135966}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: "\uC808\uADDC"
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1814135966}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1814135964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3844,7 +3771,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1814135963}
+  mPreview: {fileID: 1814135967}
+--- !u!114 &1814135967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814135961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1814135966}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: "\uC808\uADDC"
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 1814135966}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1820163282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6388090797016522966, guid: 1d4ad720151db4836931805908cec946, type: 3}
@@ -3861,63 +3807,6 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1820163287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820163282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1820163286}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Image
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1820163286}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1820163288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820163282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1820163286}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Image
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1820163286}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
---- !u!114 &1820163289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820163282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1820163286}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: Image
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 1820163286}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1820163290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4427,7 +4316,7 @@ GameObject:
   - component: {fileID: 2137925705}
   - component: {fileID: 2137925704}
   - component: {fileID: 2137925703}
-  - component: {fileID: 2137925702}
+  - component: {fileID: 2137925706}
   m_Layer: 0
   m_Name: Image_Star
   m_TagString: Untagged
@@ -4451,25 +4340,6 @@ Transform:
   m_Father: {fileID: 1287290250}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2137925702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2137925700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 2137925705}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: MarkerLetter
-  mDatasetName: 
-  mCastedBehaviour: {fileID: 2137925705}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2137925703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4587,7 +4457,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2137925702}
+  mPreview: {fileID: 2137925706}
+--- !u!114 &2137925706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137925700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 2137925705}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: MarkerLetter
+  mDatasetName: 
+  mCastedBehaviour: {fileID: 2137925705}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &478129369461671628
 GameObject:
   m_ObjectHideFlags: 0
@@ -5082,11 +4971,11 @@ PrefabInstance:
     - target: {fileID: 497168780915316726, guid: 1d4ad720151db4836931805908cec946, type: 3}
       propertyPath: mPreview
       value: 
-      objectReference: {fileID: 1820163290}
+      objectReference: {fileID: 0}
     - target: {fileID: 698056963812581331, guid: 1d4ad720151db4836931805908cec946, type: 3}
       propertyPath: mPreview
       value: 
-      objectReference: {fileID: 1167781583}
+      objectReference: {fileID: 0}
     - target: {fileID: 1523127658973859668, guid: 1d4ad720151db4836931805908cec946, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -5187,28 +5076,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4019884281791250772, guid: 1d4ad720151db4836931805908cec946, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1167781580}
-    - targetCorrespondingSourceObject: {fileID: 4019884281791250772, guid: 1d4ad720151db4836931805908cec946, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1167781581}
-    - targetCorrespondingSourceObject: {fileID: 4019884281791250772, guid: 1d4ad720151db4836931805908cec946, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1167781582}
-    - targetCorrespondingSourceObject: {fileID: 4019884281791250772, guid: 1d4ad720151db4836931805908cec946, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1167781583}
     - targetCorrespondingSourceObject: {fileID: 7237254703217412390, guid: 1d4ad720151db4836931805908cec946, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6388090797016522966, guid: 1d4ad720151db4836931805908cec946, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1820163287}
-    - targetCorrespondingSourceObject: {fileID: 6388090797016522966, guid: 1d4ad720151db4836931805908cec946, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1820163288}
-    - targetCorrespondingSourceObject: {fileID: 6388090797016522966, guid: 1d4ad720151db4836931805908cec946, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1820163289}
     - targetCorrespondingSourceObject: {fileID: 6388090797016522966, guid: 1d4ad720151db4836931805908cec946, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1820163290}
