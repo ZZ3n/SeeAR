@@ -73,7 +73,7 @@ public class CommentManager : MonoBehaviour
         item_go.GetComponentInChildren<Text>().text = text;
         item_go.transform.SetParent(CommentList);
         item_go.transform.localScale = Vector2.one;
-        
+
         // newText.text = text;
         // newText.font = CommentTemplate.font;
         // newText.fontSize = CommentTemplate.fontSize;
@@ -94,7 +94,6 @@ public class CommentManager : MonoBehaviour
     [Serializable]
     public class Comment
     {
-        public string name;
         public string content;
 
         public void printLog()
@@ -104,7 +103,7 @@ public class CommentManager : MonoBehaviour
 
         public string print()
         {
-            return name + ":" + content;
+            return content;
         }
     }
 
