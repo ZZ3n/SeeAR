@@ -4097,6 +4097,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4019884281791250772, guid: 1d4ad720151db4836931805908cec946, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1948140228}
+    - targetCorrespondingSourceObject: {fileID: 4019884281791250772, guid: 1d4ad720151db4836931805908cec946, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1948140229}
     - targetCorrespondingSourceObject: {fileID: 7237254703217412390, guid: 1d4ad720151db4836931805908cec946, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
@@ -4626,7 +4629,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 60.3
   m_fontSizeBase: 42
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5763,6 +5766,24 @@ MonoBehaviour:
   mDatasetName: Vuforia/test.xml
   mCastedBehaviour: {fileID: 1948140226}
   mType: 0
+--- !u!114 &1948140229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948140224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1973558268, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1948140226}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: test
+  mDatasetName: Vuforia/test.xml
+  mCastedBehaviour: {fileID: 1948140226}
+  mType: 0
 --- !u!1 &1978437081
 GameObject:
   m_ObjectHideFlags: 0
@@ -6409,7 +6430,7 @@ PrefabInstance:
     - target: {fileID: 1171386013057498036, guid: 97f579fd89a0f47db84b828835868312, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1095350070}
     - target: {fileID: 3158744803547343216, guid: 97f579fd89a0f47db84b828835868312, type: 3}
       propertyPath: m_Name
       value: ButtonCapture
