@@ -1,8 +1,5 @@
 using TMPro;
-using System;
 using UnityEngine;
-using UnityEngine.Serialization;
-using System.Collections.Generic;
 
 public class UIManager : MonoBehaviour
 {
@@ -21,11 +18,12 @@ public class UIManager : MonoBehaviour
 
     public void UpdateTargetDescription(ContentInfo contentInfo)
     {
-        DescriptionText.text = contentInfo.description;
-    }
-    
-    public void UpdateTargetTitle(ContentInfo contentInfo)
-    {
-        TitleText.text = contentInfo.title;
+        if (TitleText.text != contentInfo.title)
+        {
+            DescriptionText.text = contentInfo.description;
+            TitleText.text = contentInfo.title;
+            CommentManager commentManager = FindObjectOfType<CommentManager>();
+            StartCoroutine(commentManager.InitComments(contentInfo.title));
+        }
     }
 }

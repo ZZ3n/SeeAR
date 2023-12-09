@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -20,51 +21,88 @@ public class CommentManager : MonoBehaviour
     public String ServerUrl;
 
     // Start is called before the first frame update
+
     void Start()
     {
-        Debug.Log("Sended");
         CommentButton.onClick.AddListener(OnClick);
-        StartCoroutine(GetText());
-    }
-
-    IEnumerator GetText()
-    {
-        Debug.Log("Sended");
-        UnityWebRequest www = UnityWebRequest.Get(ServerUrl);
-        yield return www.SendWebRequest();
-
-        if (www.result != UnityWebRequest.Result.Success)
-        {
-            Debug.Log(www.error);
-        }
-        else
-        {
-            // Show results as text
-            Comments fromJson = JsonUtility.FromJson<Comments>(www.downloadHandler.text);
-
-            List<string> list = new List<string>();
-            foreach (var vComment in fromJson.list)
-            {
-                AddComment(vComment.print());
-            }
-
-            // Or retrieve results as binary data
-            byte[] results = www.downloadHandler.data;
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        StartCoroutine(InitComments());
     }
 
     void OnClick()
     {
         string text = InputField.text;
-        AddComment(text);
+        if (text == String.Empty)
+        {
+            return;
+        }
+
+        StartCoroutine(AddComment(text));
+        StartCoroutine(PostCommentToServer(text));
     }
 
-    void AddComment(string text)
+    public IEnumerator InitComments()
+    {
+        return InitComments(GetObjectName());
+    }
+
+    public IEnumerator InitComments(string objectName)
+    {
+        if (objectName == null)
+        {
+            yield break;
+        }
+
+        yield return StartCoroutine(DestroyComments());
+
+
+        Debug.Log("Sended");
+        UnityWebRequest www = UnityWebRequest.Get(ServerUrl + "/" + objectName);
+        yield return www.SendWebRequest();
+
+        if (www.result != UnityWebRequest.Result.Success)
+        {
+            Debug.Log(www.error);
+            yield break;
+        }
+
+        Debug.Log(www.url);
+        Debug.Log(www.downloadHandler.text);
+
+        // Show results as text
+        Comments fromJson = JsonUtility.FromJson<Comments>(www.downloadHandler.text);
+
+        List<string> list = new List<string>();
+        foreach (var vComment in fromJson.list)
+        {
+            StartCoroutine(AddComment(vComment.print()));
+        }
+
+        // // Or retrieve results as binary data
+        // byte[] results = www.downloadHandler.data;
+    }
+
+    static string GetObjectName()
+    {
+        return FindObjectOfType<UIManager>().TitleText.text;
+    }
+
+    IEnumerator DestroyComments()
+    {
+        foreach (Transform child in CommentList.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        yield break;
+    }
+
+    // Update is called once per frame
+
+    void Update()
+    {
+    }
+
+    IEnumerator AddComment(string text)
     {
         InputField.text = null;
         // int childCount = CommentList.transform.childCount;
@@ -73,27 +111,43 @@ public class CommentManager : MonoBehaviour
         item_go.GetComponentInChildren<Text>().text = text;
         item_go.transform.SetParent(CommentList);
         item_go.transform.localScale = Vector2.one;
+        yield break;
+    }
 
-        // newText.text = text;
-        // newText.font = CommentTemplate.font;
-        // newText.fontSize = CommentTemplate.fontSize;
-        // newText.fontStyle = CommentTemplate.fontStyle;
+    IEnumerator PostCommentToServer(string text)
+    {
+        Comment comment = new Comment();
 
-        // RectTransform newTextRectTransform = newText.rectTransform;
+        comment.content = text;
+        comment.objectName = GetObjectName();
 
-        // newTextRectTransform.anchorMin = new Vector2(0, 1);
-        // newTextRectTransform.anchorMax = new Vector2(1, 1);
-        // newTextRectTransform.pivot = new Vector2(0, 1);
+        var jsonString = JsonUtility.ToJson(comment);
 
-        // Vector2 commentSize = CommentTemplate.rectTransform.sizeDelta;
-        // newTextRectTransform.offsetMax = new Vector2(0, -commentSize.y * childCount);
-        // newTextRectTransform.offsetMin = new Vector2(0, -commentSize.y * childCount + commentSize.y);
-        // newTextRectTransform.sizeDelta = new Vector2(newTextRectTransform.sizeDelta.x, commentSize.y);
+        UnityWebRequest www = UnityWebRequest.PostWwwForm(ServerUrl, "");
+        www.SetRequestHeader("Content-Type", "application/json");
+        Debug.Log(jsonString);
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonString);
+
+        www.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        www.downloadHandler = new DownloadHandlerBuffer();
+
+        yield return www.SendWebRequest();
+        if (www.result != UnityWebRequest.Result.Success)
+        {
+            Debug.Log(www.url);
+            Debug.Log(www.error);
+        }
+        else
+        {
+            Debug.Log(www.url);
+            Debug.Log(www.downloadHandler.text);
+        }
     }
 
     [Serializable]
     public class Comment
     {
+        public string objectName;
         public string content;
 
         public void printLog()
